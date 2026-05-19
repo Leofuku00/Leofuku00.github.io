@@ -65,7 +65,7 @@ const copy = {
     navStory: "経歴",
     navContact: "連絡先",
     heroEyebrow: "UCLA Mathematics of Computation",
-    heroTitle: "Leo Fukunaga",
+    heroTitle: "福永怜生",
     heroSubtitle:
       "アメリカと日本でソフトウェアエンジニアリングまたはデータサイエンスのインターン機会を探しています。Pythonデータパイプライン、API連携、SQLiteデータベース、機械学習評価のプロジェクト経験があります。",
     heroPrimary: "プロジェクトを見る",
