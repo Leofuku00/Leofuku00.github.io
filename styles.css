@@ -59,7 +59,7 @@ a {
   display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 28px;
-  min-height: 76px;
+  min-height: 64px;
   padding: 0 5vw;
   position: sticky;
   top: 0;
@@ -135,10 +135,10 @@ main {
 
 .hero {
   display: grid;
-  gap: clamp(32px, 6vw, 84px);
+  gap: clamp(24px, 4vw, 56px);
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.56fr);
   min-height: auto;
-  padding: clamp(48px, 7vw, 88px) 5vw 42px;
+  padding: clamp(24px, 4vw, 48px) 5vw 28px;
 }
 
 .hero-copy {
@@ -164,10 +164,10 @@ p {
 }
 
 h1 {
-  font-size: clamp(2.8rem, 6vw, 5.6rem);
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
   letter-spacing: 0;
   line-height: 1;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
   max-width: 980px;
 }
 
@@ -186,8 +186,8 @@ h3 {
 
 .hero-subtitle {
   color: #403d39;
-  font-size: clamp(1.08rem, 1.8vw, 1.35rem);
-  line-height: 1.58;
+  font-size: clamp(1.02rem, 1.45vw, 1.2rem);
+  line-height: 1.5;
   max-width: 760px;
 }
 
@@ -195,7 +195,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 34px;
+  margin-top: 24px;
 }
 
 .button {
@@ -223,7 +223,7 @@ h3 {
   background: var(--surface);
   border: 1px solid var(--ink);
   box-shadow: var(--shadow);
-  padding: 22px;
+  padding: 18px;
   position: relative;
 }
 
@@ -243,7 +243,7 @@ h3 {
     linear-gradient(135deg, rgba(14, 106, 106, 0.22), transparent 42%),
     #e9e0d2;
   display: grid;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
   place-items: center;
 }
 
@@ -256,9 +256,9 @@ h3 {
 }
 
 .portrait-frame img.headshot {
-  height: min(78%, 230px);
+  height: min(74%, 200px);
   object-fit: cover;
-  width: min(78%, 230px);
+  width: min(74%, 200px);
 }
 
 .signal-list {
@@ -564,7 +564,7 @@ html[lang="ja"] h1 {
 @media (max-width: 640px) {
   .site-header {
     gap: 12px;
-    min-height: 68px;
+    min-height: 62px;
     padding: 0 18px;
   }
 
@@ -576,6 +576,11 @@ html[lang="ja"] h1 {
   .section {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .hero {
+    padding-top: 22px;
+    padding-bottom: 24px;
   }
 
   h1 {
