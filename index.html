@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Software engineering portfolio for Leo Fukunaga, focused on backend, data pipelines, machine learning, and API-driven web projects."
+    />
+    <title>Leo Fukunaga | Software Engineering Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Leo Fukunaga home">
+        <span class="brand-mark" aria-hidden="true">LF</span>
+        <span>Leo Fukunaga</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#work" data-i18n="navWork">Work</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#story" data-i18n="navStory">Story</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="language-switcher" aria-label="Language switcher">
+        <button class="lang-btn is-active" type="button" data-lang="en">EN</button>
+        <button class="lang-btn" type="button" data-lang="ja">JP</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">SWE internship portfolio</p>
+          <h1 data-i18n="heroTitle">I build software around messy real-world data.</h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            UCLA Mathematics of Computation student working across Python, C++, Flask, SQL, and
+            machine learning. I like projects where APIs, data cleaning, model evaluation, and
+            usable interfaces have to meet in one place.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work" data-i18n="heroPrimary">View projects</a>
+            <a class="button secondary" href="https://github.com/Leofuku00" data-i18n="heroSecondary">GitHub</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="Profile summary">
+          <div class="portrait-frame">
+            <img
+              class="headshot"
+              src="./assets/leo-fukunaga-headshot-crop.jpg"
+              alt="Leo Fukunaga headshot"
+              width="1200"
+              height="1200"
+            />
+          </div>
+          <div class="signal-list">
+            <div>
+              <span data-i18n="signalRoleLabel">Target</span>
+              <strong data-i18n="signalRole">Software engineering internships</strong>
+            </div>
+            <div>
+              <span data-i18n="signalSchoolLabel">School</span>
+              <strong data-i18n="signalSchool">UCLA, B.S. Mathematics of Computation</strong>
+            </div>
+            <div>
+              <span data-i18n="signalRegionsLabel">Regions</span>
+              <strong data-i18n="signalRegions">United States and Japan</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section intro-strip" aria-label="Technical focus">
+        <div>
+          <span class="mini-label" data-i18n="focusOneLabel">Backend</span>
+          <p data-i18n="focusOne">Flask routes, API integration, JSON processing, local deployment</p>
+        </div>
+        <div>
+          <span class="mini-label" data-i18n="focusTwoLabel">Data</span>
+          <p data-i18n="focusTwo">Pandas cleaning, SQLite schema design, reproducible pipelines</p>
+        </div>
+        <div>
+          <span class="mini-label" data-i18n="focusThreeLabel">ML</span>
+          <p data-i18n="focusThree">Scikit-learn model selection, grouped CV, TF-IDF and NMF features</p>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="workEyebrow">Selected software work</p>
+          <h2 data-i18n="workTitle">Projects with working parts, not just screenshots.</h2>
+        </div>
+
+        <div class="project-stack">
+          <article class="project featured">
+            <div class="project-index">01</div>
+            <div class="project-main">
+              <div class="project-title-row">
+                <h3 data-i18n="projectRmpTitle">RateMyProfessors rating prediction pipeline</h3>
+                <a href="https://github.com/Leofuku00/PIC16b-project" data-i18n="repoLink">Repository</a>
+              </div>
+              <p data-i18n="projectRmpBody">
+                End-to-end Python pipeline for UC professor review data: fetches source data, cleans
+                text, expands rating tags, builds a normalized SQLite database, and compares models
+                for clarity and difficulty prediction.
+              </p>
+              <div class="project-details">
+                <span>Python</span>
+                <span>SQLite</span>
+                <span>scikit-learn</span>
+                <span>Pandas</span>
+                <span>TF-IDF</span>
+                <span>NMF</span>
+              </div>
+            </div>
+            <div class="project-proof">
+              <p class="proof-number">53.6%</p>
+              <p data-i18n="projectRmpMetric">top clarity CV accuracy from model search</p>
+              <p class="proof-note" data-i18n="projectRmpNote">
+                Uses grouped cross-validation by professor to reduce leakage between train and
+                validation folds.
+              </p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-index">02</div>
+            <div class="project-main">
+              <div class="project-title-row">
+                <h3 data-i18n="projectLeagueTitle">League of Legends match history dashboard</h3>
+                <a href="https://github.com/Leofuku00/league-match-history" data-i18n="repoLink">Repository</a>
+              </div>
+              <p data-i18n="projectLeagueBody">
+                Flask app that connects to Riot Games APIs and Data Dragon to show user rank, level,
+                profile icon, recent opponents, match history, champion picks, items, and KDA.
+              </p>
+              <div class="project-details">
+                <span>Flask</span>
+                <span>Riot API</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JSON</span>
+              </div>
+            </div>
+            <div class="project-proof">
+              <p class="proof-number">Live API</p>
+              <p data-i18n="projectLeagueMetric">data is requested and rendered from Riot services</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-index">03</div>
+            <div class="project-main">
+              <div class="project-title-row">
+                <h3 data-i18n="projectOutcomeTitle">League outcome predictability analysis</h3>
+                <span class="status-pill" data-i18n="researchLabel">Research project</span>
+              </div>
+              <p data-i18n="projectOutcomeBody">
+                Analyzed more than 65,000 League of Legends games across skill levels to compare
+                match outcome predictability and game-balance signals.
+              </p>
+              <div class="project-details">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Random Forest</span>
+                <span>Decision Tree</span>
+                <span>MLP</span>
+              </div>
+            </div>
+            <div class="project-proof">
+              <p class="proof-number">65k+</p>
+              <p data-i18n="projectOutcomeMetric">games cleaned, sorted, and modeled</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="skillsEyebrow">What I can contribute</p>
+          <h2 data-i18n="skillsTitle">A software foundation with data-heavy project experience.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-block">
+            <h3 data-i18n="skillsLangTitle">Languages</h3>
+            <p>Python, C++, Java, JavaScript, HTML, CSS, SQL</p>
+          </div>
+          <div class="skill-block">
+            <h3 data-i18n="skillsBackendTitle">Backend and data</h3>
+            <p>Flask, REST APIs, SQLite, Pandas, CSV processing, schema normalization</p>
+          </div>
+          <div class="skill-block">
+            <h3 data-i18n="skillsMLTitle">Machine learning</h3>
+            <p>scikit-learn, feature pipelines, grouped cross-validation, model comparison</p>
+          </div>
+          <div class="skill-block">
+            <h3 data-i18n="skillsPracticeTitle">Engineering practice</h3>
+            <p>Git, reproducible scripts, notebooks, clear READMEs, local app setup</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story-section" id="story">
+        <div class="story-copy">
+          <p class="eyebrow" data-i18n="storyEyebrow">Background</p>
+          <h2 data-i18n="storyTitle">I came into software through computation, data, and research.</h2>
+          <p data-i18n="storyBody">
+            My coursework covers C++, data structures, algorithms, discrete math, linear algebra, and
+            advanced Python. Outside class, I have worked on biomedical research data, built figures
+            for a manuscript, and learned to treat messy datasets as engineering problems rather than
+            spreadsheet chores.
+          </p>
+        </div>
+
+        <div class="timeline" aria-label="Education and experience timeline">
+          <div class="timeline-item">
+            <span>2029</span>
+            <p data-i18n="timelineUcla">Expected B.S. in Mathematics of Computation at UCLA</p>
+          </div>
+          <div class="timeline-item">
+            <span>2025</span>
+            <p data-i18n="timelineAa">A.A. in Mathematics and Natural Sciences, Summa Cum Laude</p>
+          </div>
+          <div class="timeline-item">
+            <span>2024-2025</span>
+            <p data-i18n="timelineResearch">Biomedical research assistant, infectious disease lab</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">Open to SWE internship conversations in the U.S. and Japan.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:leofukunaga912@ucla.edu">leofukunaga912@ucla.edu</a>
+          <a href="https://github.com/Leofuku00">github.com/Leofuku00</a>
+          <a href="https://www.youtube.com/watch?v=8K0K1ZI8amg" data-i18n="demoLink">Dashboard demo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footerText">Built as a focused SWE internship portfolio.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
