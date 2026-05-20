@@ -56,6 +56,8 @@ const copy = {
     contactEyebrow: "Contact",
     contactTitle: "Open to software engineering or data science roles in the U.S. and Japan.",
     demoLink: "Demo",
+    resumeEnglishLink: "Resume (English)",
+    resumeJapaneseLink: "Resume (Japanese)",
   },
   ja: {
     skip: "本文へ移動",
@@ -114,6 +116,8 @@ const copy = {
     contactEyebrow: "連絡先",
     contactTitle: "米国・日本のソフトウェアエンジニア／データサイエンス系インターンを志望",
     demoLink: "デモ",
+    resumeEnglishLink: "英文レジュメ",
+    resumeJapaneseLink: "和文履歴書",
   },
 };
 
