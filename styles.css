@@ -352,6 +352,14 @@ h3 {
   justify-content: space-between;
 }
 
+.project-links {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
 .project-title-row a,
 .status-pill {
   border: 1px solid var(--line);
