@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portfolio for Leo Fukunaga, a UCLA Mathematics of Computation student working across software engineering, machine learning, geospatial analysis, and data science."
+      content="Portfolio for Leo Fukunaga, a UCLA Computer Engineering student working across software engineering, machine learning, and data science."
     />
     <title>Leo Fukunaga | Software, ML & Data Projects</title>
     <link rel="stylesheet" href="./styles.css" />
@@ -26,20 +26,15 @@
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
 
-      <div class="language-switcher" aria-label="Language switcher">
-        <button class="lang-btn is-active" type="button" data-lang="en">EN</button>
-        <button class="lang-btn" type="button" data-lang="ja">JP</button>
-      </div>
     </header>
 
     <main id="main">
       <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="heroEyebrow">UCLA Mathematics of Computation</p>
+          <p class="eyebrow" data-i18n="heroEyebrow">UCLA Computer Engineering</p>
           <h1 data-i18n="heroTitle">Leo Fukunaga</h1>
           <p class="hero-subtitle" data-i18n="heroSubtitle">
-            Software engineering and data science internship candidate. Project experience includes
-            Python data pipelines, API integration, SQLite databases, and machine learning evaluation.
+            Computer engineering student building software, machine learning systems, and data-driven tools.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#work" data-i18n="heroPrimary">View projects</a>
@@ -64,11 +59,11 @@
             </div>
             <div>
               <span data-i18n="signalSchoolLabel">Education</span>
-              <strong data-i18n="signalSchool">UCLA, Mathematics of Computation major</strong>
+              <strong data-i18n="signalSchool">UCLA, Computer Engineering · 3.8 GPA</strong>
             </div>
             <div>
               <span data-i18n="signalFocusLabel">Focus</span>
-              <strong data-i18n="signalFocus">Software, machine learning, and geospatial data</strong>
+              <strong data-i18n="signalFocus">Software, machine learning, and data systems</strong>
             </div>
           </div>
         </aside>
@@ -77,7 +72,7 @@
       <section class="section experience-section" id="experience">
         <div class="section-heading">
           <p class="eyebrow" data-i18n="experienceEyebrow">Current internship</p>
-          <h2 data-i18n="experienceTitle">Building machine-learning tools for geospatial analysis</h2>
+          <h2 data-i18n="experienceTitle">Building an automated crack-detection system</h2>
         </div>
 
         <article class="experience-card">
@@ -89,16 +84,16 @@
             <span class="experience-date">2026–Present</span>
           </div>
           <p data-i18n="experienceBody">
-            Developing and evaluating semantic-segmentation models for satellite and aerial imagery
-            with Python and PyTorch. Building QGIS, GRASS GIS, and Python workflows to support
-            flood-risk and accessibility analysis.
+            Leading development of an automated crack-detection system for building imagery, owning
+            system architecture and end-to-end implementation. Benchmarking U-Net and transformer
+            architectures in PyTorch for nine-class image segmentation and documenting the system for team reuse.
           </p>
           <div class="project-details" aria-label="Internship technologies">
             <span>Python</span>
             <span>PyTorch</span>
-            <span>QGIS</span>
-            <span>GRASS GIS</span>
             <span>Computer vision</span>
+            <span>U-Net</span>
+            <span>Transformers</span>
           </div>
         </article>
       </section>
@@ -106,15 +101,15 @@
       <section class="section intro-strip" aria-label="Technical focus">
         <div>
           <span class="mini-label" data-i18n="focusOneLabel">Backend</span>
-          <p data-i18n="focusOne">Python services, Flask APIs, data validation, and Git</p>
+          <p data-i18n="focusOne">Python services, Flask APIs, GraphQL, and Git</p>
         </div>
         <div>
           <span class="mini-label" data-i18n="focusTwoLabel">Data</span>
-          <p data-i18n="focusTwo">Pandas cleaning, SQLite schema design, reproducible pipelines</p>
+          <p data-i18n="focusTwo">Pandas cleaning, SQLite schema design, and reliable data pipelines</p>
         </div>
         <div>
           <span class="mini-label" data-i18n="focusThreeLabel">ML</span>
-          <p data-i18n="focusThree">PyTorch, scikit-learn, segmentation, TF-IDF, and NMF</p>
+          <p data-i18n="focusThree">PyTorch, U-Net, transformers, scikit-learn, TF-IDF, and NMF</p>
         </div>
       </section>
 
@@ -133,21 +128,22 @@
                 <a href="https://github.com/Leofuku00/PIC16b-project" data-i18n="repoLink">Repository</a>
               </div>
               <p data-i18n="projectRmpBody">
-                Built a Python pipeline that collects RateMyProfessors review data for UC campuses,
-                cleans review text and tags, stores the data in normalized SQLite tables, and runs
-                cross-validated ML experiments to predict clarity and difficulty ratings.
+                Processed approximately 400,000 RateMyProfessors reviews through paginated GraphQL
+                requests, exponential-backoff retries, and normalized SQLite storage. Built reusable
+                feature and model modules for clarity and difficulty prediction with professor-grouped cross-validation.
               </p>
               <div class="project-details">
                 <span>Python</span>
                 <span>SQLite</span>
                 <span>scikit-learn</span>
                 <span>Pandas</span>
+                <span>GraphQL</span>
                 <span>TF-IDF</span>
                 <span>NMF</span>
               </div>
             </div>
             <div class="project-proof">
-              <p class="proof-number">480k+</p>
+              <p class="proof-number">400k+</p>
               <p data-i18n="projectRmpMetric">reviews imported, cleaned, and prepared for modeling</p>
               <p class="proof-note" data-i18n="projectRmpNote">
                 Includes grouped 5-fold cross-validation to reduce leakage between professors.
@@ -166,9 +162,9 @@
                 </div>
               </div>
               <p data-i18n="projectLeagueBody">
-                Built the full match history app: API integration, data parsing, and the user-facing
-                dashboard. It calls Riot Games APIs, handles player and match JSON responses, joins
-                Data Dragon metadata, and displays rank, champions, items, opponents, and KDA.
+                Built a full-stack dashboard displaying up to 10 recent matches per player with a
+                Python/Flask backend and HTML/CSS views. Joined Riot API responses with Data Dragon
+                data and handled rate-limit retries to combine rankings, match statistics, and game assets.
               </p>
               <div class="project-details">
                 <span>Python</span>
@@ -189,25 +185,24 @@
             <div class="project-index">03</div>
             <div class="project-main">
               <div class="project-title-row">
-                <h3 data-i18n="projectOutcomeTitle">League win/loss prediction analysis</h3>
-                <span class="status-pill" data-i18n="researchLabel">Research project</span>
+                <h3 data-i18n="projectOutcomeTitle">Leadership and honors</h3>
+                <span class="status-pill" data-i18n="researchLabel">Community</span>
               </div>
               <p data-i18n="projectOutcomeBody">
-                Analyzed more than 65,000 League of Legends games to compare how predictable match
-                outcomes are at different skill levels. Cleaned the data with Pandas and tested
-                multiple scikit-learn models, including Random Forest, Decision Tree, and MLP.
+                As a Career Team Officer for the UCLA Japanese Student Association, organized the first
+                joint networking event with the Japanese Business Association. Also recognized as a Gold
+                Shield Alumni Scholarship recipient and a Upsilon Pi Epsilon Honor Society member.
               </p>
               <div class="project-details">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>Random Forest</span>
-                <span>Decision Tree</span>
-                <span>MLP</span>
+                <span>Leadership</span>
+                <span>Event planning</span>
+                <span>Outreach</span>
+                <span>Upsilon Pi Epsilon</span>
               </div>
             </div>
             <div class="project-proof">
-              <p class="proof-number">65k+</p>
-              <p data-i18n="projectOutcomeMetric">games cleaned, grouped by skill level, and modeled</p>
+              <p class="proof-number">Top 1/3</p>
+              <p data-i18n="projectOutcomeMetric">Upsilon Pi Epsilon Honor Society</p>
             </div>
           </article>
         </div>
@@ -222,19 +217,19 @@
         <div class="skills-grid">
           <div class="skill-block">
             <h3 data-i18n="skillsLangTitle">Languages</h3>
-            <p>Python, C++, Java, JavaScript, SQL</p>
+            <p>Python, C++, Java, JavaScript, SQL, HTML/CSS</p>
           </div>
           <div class="skill-block">
             <h3 data-i18n="skillsBackendTitle">Web, APIs, and data</h3>
-            <p>HTML, CSS, Flask, REST APIs, SQLite, Pandas, CSV processing, schema normalization</p>
+            <p>Flask, REST APIs, GraphQL, SQLite, Pandas, CSV processing, schema normalization</p>
           </div>
           <div class="skill-block">
             <h3 data-i18n="skillsMLTitle">Machine learning</h3>
-            <p>PyTorch, scikit-learn, semantic segmentation, TF-IDF, NMF, grouped cross-validation</p>
+            <p>PyTorch, scikit-learn, U-Net, transformer architectures, TF-IDF, NMF, grouped cross-validation</p>
           </div>
           <div class="skill-block">
             <h3 data-i18n="skillsPracticeTitle">Geospatial and workflows</h3>
-            <p>QGIS, GRASS GIS, Git, reproducible scripts, notebooks, documented experiments</p>
+            <p>Git, Linux, reproducible scripts, notebooks, technical documentation</p>
           </div>
         </div>
       </section>
@@ -242,12 +237,13 @@
       <section class="section story-section" id="background">
         <div class="story-copy">
           <p class="eyebrow" data-i18n="storyEyebrow">Background</p>
-          <h2 data-i18n="storyTitle">Research and education</h2>
+          <h2 data-i18n="storyTitle">Engineering, research, and leadership</h2>
           <p data-i18n="storyBody">
-            At Helios RS, I develop and evaluate semantic-segmentation models for satellite and aerial
-            imagery with Python and PyTorch, while building QGIS and GRASS GIS workflows for
-            geospatial analysis. Previously, biomedical research at the Lundquist Institute gave me
-            experience interpreting clinical data and preparing publication figures.
+            At Helios RS, I lead development of an automated crack-detection system for building imagery,
+            benchmarking U-Net and transformer architectures for nine-class segmentation and documenting
+            the system for team reuse. Previously, biomedical research at the Lundquist Institute gave me
+            experience validating clinical data, preparing analysis tables and graphics, and contributing to
+            an IDWeek 2025 abstract published in Open Forum Infectious Diseases.
           </p>
         </div>
 
@@ -258,11 +254,11 @@
           </div>
           <div class="timeline-item">
             <span>2029</span>
-            <p data-i18n="timelineUcla">Expected B.S. in Mathematics of Computation at UCLA</p>
+            <p data-i18n="timelineUcla">Expected B.S. in Computer Engineering at UCLA · 3.8 GPA</p>
           </div>
           <div class="timeline-item">
-            <span>2025</span>
-            <p data-i18n="timelineHarbor">A.A. in Liberal Arts and Sciences, Los Angeles Harbor College</p>
+            <span>2025–Present</span>
+            <p data-i18n="timelineHarbor">Career Team Officer, UCLA Japanese Student Association</p>
           </div>
         </div>
       </section>
@@ -276,11 +272,9 @@
           <a href="mailto:leofukunaga912@ucla.edu">leofukunaga912@ucla.edu</a>
           <a href="https://github.com/Leofuku00">GitHub</a>
           <a href="https://www.linkedin.com/in/leo-fukunaga-b3a19128a/">LinkedIn</a>
-          <a href="./assets/leo-fukunaga-resume-english.pdf" data-i18n="resumeEnglishLink">Resume (English)</a>
-          <a href="./assets/leo-fukunaga-resume-japanese.pdf" data-i18n="resumeJapaneseLink">Resume (Japanese)</a>
+          <a href="./assets/leo-fukunaga-resume-english.pdf" data-i18n="resumeEnglishLink">Download current resume</a>
         </div>
       </section>
     </main>
-    <script src="./script.js"></script>
   </body>
 </html>
