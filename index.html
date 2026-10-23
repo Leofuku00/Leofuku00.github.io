@@ -5,276 +5,370 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portfolio for Leo Fukunaga, a UCLA Computer Engineering student working across software engineering, machine learning, and data science."
+      content="Leo Fukunaga is a UCLA Computer Engineering student building software, machine learning systems, and data tools. Explore his experience and projects."
     />
-    <title>Leo Fukunaga | Software, ML & Data Projects</title>
+    <title>Leo Fukunaga | Software & Machine Learning</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Leo Fukunaga home">
-        <span class="brand-mark" aria-hidden="true">LF</span>
-        <span>Leo Fukunaga</span>
-      </a>
-
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#work" data-i18n="navWork">Work</a>
-        <a href="#skills" data-i18n="navSkills">Skills</a>
-        <a href="#experience" data-i18n="navStory">Experience</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-      </nav>
-
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Leo Fukunaga home">
+          <span class="brand-mark" aria-hidden="true">LF</span>
+          <span>Leo Fukunaga</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="main">
-      <section class="hero" id="top">
+    <main id="main" tabindex="-1">
+      <section class="hero page-width" id="top" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="heroEyebrow">UCLA Computer Engineering</p>
-          <h1 data-i18n="heroTitle">Leo Fukunaga</h1>
-          <p class="hero-subtitle" data-i18n="heroSubtitle">
-            Computer engineering student building software, machine learning systems, and data-driven tools.
+          <p class="eyebrow">UCLA · Computer Engineering</p>
+          <h1 id="hero-title">Leo Fukunaga</h1>
+          <p class="hero-subtitle">
+            Building software, machine learning systems, and data tools.
+          </p>
+          <p class="hero-description">
+            I'm a Computer Engineering student at UCLA and an AI / Machine
+            Learning Intern at Helios RS. My work spans computer vision,
+            full-stack applications, and reliable data pipelines.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#work" data-i18n="heroPrimary">View projects</a>
-            <a class="button secondary" href="https://github.com/Leofuku00" data-i18n="heroSecondary">GitHub</a>
+            <a class="button primary" href="#projects">View projects</a>
+            <a
+              class="button secondary"
+              href="./assets/leo-fukunaga-resume-english.pdf"
+              >View resume</a
+            >
           </div>
         </div>
-
         <aside class="profile-panel" aria-label="Profile summary">
-          <div class="portrait-frame">
-            <img
-              class="headshot"
-              src="./assets/leo-fukunaga-headshot-crop.jpg"
-              alt="Leo Fukunaga headshot"
-              width="1200"
-              height="1200"
-            />
-          </div>
-          <div class="signal-list">
+          <img
+            class="headshot"
+            src="./assets/leo-fukunaga-headshot-crop.jpg"
+            alt="Portrait of Leo Fukunaga"
+            width="1200"
+            height="1200"
+          />
+          <dl class="profile-facts">
             <div>
-              <span data-i18n="signalRoleLabel">Target</span>
-              <strong data-i18n="signalRole">SWE and data science internships</strong>
+              <dt>Currently</dt>
+              <dd>AI / Machine Learning Intern<br />Helios RS</dd>
             </div>
             <div>
-              <span data-i18n="signalSchoolLabel">Education</span>
-              <strong data-i18n="signalSchool">UCLA, Computer Engineering · 3.8 GPA</strong>
+              <dt>Education</dt>
+              <dd>UCLA · Class of 2029</dd>
             </div>
-            <div>
-              <span data-i18n="signalFocusLabel">Focus</span>
-              <strong data-i18n="signalFocus">Software, machine learning, and data systems</strong>
-            </div>
-          </div>
+          </dl>
         </aside>
       </section>
 
-      <section class="section experience-section" id="experience">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="experienceEyebrow">Current internship</p>
-          <h2 data-i18n="experienceTitle">Building an automated crack-detection system</h2>
+      <section
+        class="section section-tinted"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2 id="experience-title">Engineering & research</h2>
+          </div>
+          <div class="card-stack">
+            <article class="experience-card">
+              <div class="card-heading">
+                <div>
+                  <p class="organization">Helios RS</p>
+                  <h3>AI / Machine Learning Intern</h3>
+                </div>
+                <p class="date">Jun 2026–Present</p>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  Leading development of an automated crack-detection system for
+                  building imagery, owning system architecture and end-to-end
+                  implementation.
+                </li>
+                <li>
+                  Benchmarked U-Net and transformer architectures in PyTorch for
+                  nine-class image segmentation, identifying U-Net as the
+                  stronger model with limited data.
+                </li>
+                <li>
+                  Prepared segmentation models and code for team reuse through
+                  technical documentation and onboarding materials.
+                </li>
+              </ul>
+              <ul class="tags" aria-label="Technologies used at Helios RS">
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>Computer vision</li>
+                <li>U-Net</li>
+                <li>Transformers</li>
+              </ul>
+            </article>
+            <article class="experience-card">
+              <div class="card-heading">
+                <div>
+                  <p class="organization">
+                    The Lundquist Institute, Harbor-UCLA
+                  </p>
+                  <h3>Biomedical Research Assistant</h3>
+                </div>
+                <p class="date">Jun 2024–Dec 2025</p>
+              </div>
+              <p class="card-description">
+                Cleaned and validated clinical study data and produced analysis
+                tables and graphics. Co-authored an IDWeek 2025 abstract
+                published in <cite>Open Forum Infectious Diseases</cite> in
+                2026.
+              </p>
+              <a
+                class="text-link"
+                href="https://academic.oup.com/ofid/article/13/Supplement_1/ofaf695.1023/8420989"
+                >View published abstract <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
         </div>
-
-        <article class="experience-card">
-          <div class="experience-heading">
-            <div>
-              <p class="experience-company">Helios RS</p>
-              <h3 data-i18n="experienceRole">AI / Machine Learning Intern</h3>
-            </div>
-            <span class="experience-date">2026–Present</span>
-          </div>
-          <p data-i18n="experienceBody">
-            Leading development of an automated crack-detection system for building imagery, owning
-            system architecture and end-to-end implementation. Benchmarking U-Net and transformer
-            architectures in PyTorch for nine-class image segmentation and documenting the system for team reuse.
-          </p>
-          <div class="project-details" aria-label="Internship technologies">
-            <span>Python</span>
-            <span>PyTorch</span>
-            <span>Computer vision</span>
-            <span>U-Net</span>
-            <span>Transformers</span>
-          </div>
-        </article>
       </section>
 
-      <section class="section intro-strip" aria-label="Technical focus">
-        <div>
-          <span class="mini-label" data-i18n="focusOneLabel">Backend</span>
-          <p data-i18n="focusOne">Python services, Flask APIs, GraphQL, and Git</p>
-        </div>
-        <div>
-          <span class="mini-label" data-i18n="focusTwoLabel">Data</span>
-          <p data-i18n="focusTwo">Pandas cleaning, SQLite schema design, and reliable data pipelines</p>
-        </div>
-        <div>
-          <span class="mini-label" data-i18n="focusThreeLabel">ML</span>
-          <p data-i18n="focusThree">PyTorch, U-Net, transformers, scikit-learn, TF-IDF, and NMF</p>
-        </div>
-      </section>
-
-      <section class="section" id="work">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="workEyebrow">Projects</p>
-          <h2 data-i18n="workTitle">Data-driven development and analysis</h2>
-        </div>
-
-        <div class="project-stack">
-          <article class="project featured">
-            <div class="project-index">01</div>
-            <div class="project-main">
-              <div class="project-title-row">
-                <h3 data-i18n="projectRmpTitle">Professor review rating prediction</h3>
-                <a href="https://github.com/Leofuku00/PIC16b-project" data-i18n="repoLink">Repository</a>
-              </div>
-              <p data-i18n="projectRmpBody">
-                Processed approximately 400,000 RateMyProfessors reviews through paginated GraphQL
-                requests, exponential-backoff retries, and normalized SQLite storage. Built reusable
-                feature and model modules for clarity and difficulty prediction with professor-grouped cross-validation.
-              </p>
-              <div class="project-details">
-                <span>Python</span>
-                <span>SQLite</span>
-                <span>scikit-learn</span>
-                <span>Pandas</span>
-                <span>GraphQL</span>
-                <span>TF-IDF</span>
-                <span>NMF</span>
-              </div>
-            </div>
-            <div class="project-proof">
-              <p class="proof-number">400k+</p>
-              <p data-i18n="projectRmpMetric">reviews imported, cleaned, and prepared for modeling</p>
-              <p class="proof-note" data-i18n="projectRmpNote">
-                Includes grouped 5-fold cross-validation to reduce leakage between professors.
-              </p>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-index">02</div>
-            <div class="project-main">
-              <div class="project-title-row">
-                <h3 data-i18n="projectLeagueTitle">League of Legends match history</h3>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2 id="projects-title">From raw data to useful tools</h2>
+          </div>
+          <div class="card-stack">
+            <article class="project featured">
+              <div class="project-main">
+                <p class="project-index">01 / Data & machine learning</p>
+                <h3>RateMyProfessors Rating Prediction</h3>
+                <p class="card-description">
+                  Built a Python pipeline using paginated GraphQL requests,
+                  exponential-backoff retries, and normalized SQLite storage.
+                  Primary-key deduplication and foreign-key constraints maintain
+                  data integrity across a four-table schema.
+                </p>
+                <p class="card-description">
+                  Developed reusable feature and model modules for clarity and
+                  difficulty prediction using TF-IDF and NMF, evaluating
+                  generalization with professor-grouped cross-validation.
+                </p>
+                <ul class="tags" aria-label="Rating prediction technologies">
+                  <li>Python</li>
+                  <li>GraphQL</li>
+                  <li>SQLite</li>
+                  <li>scikit-learn</li>
+                  <li>TF-IDF</li>
+                  <li>NMF</li>
+                </ul>
                 <div class="project-links">
-                  <a href="https://github.com/Leofuku00/league-match-history" data-i18n="repoLink">Repository</a>
-                  <a href="https://www.youtube.com/watch?v=8K0K1ZI8amg" data-i18n="demoLink">Demo</a>
+                  <a
+                    class="text-link"
+                    href="https://github.com/Leofuku00/RMP-professor-ratings"
+                    >View repository <span aria-hidden="true">↗</span></a
+                  >
                 </div>
               </div>
-              <p data-i18n="projectLeagueBody">
-                Built a full-stack dashboard displaying up to 10 recent matches per player with a
-                Python/Flask backend and HTML/CSS views. Joined Riot API responses with Data Dragon
-                data and handled rate-limit retries to combine rankings, match statistics, and game assets.
+              <aside
+                class="project-proof"
+                aria-label="Rating prediction project scale"
+              >
+                <p class="proof-number">~400k</p>
+                <p>reviews processed</p>
+                <p class="proof-note">
+                  Professor-grouped evaluation keeps reviews from the same
+                  professor together.
+                </p>
+              </aside>
+            </article>
+            <article class="project">
+              <div class="project-main">
+                <p class="project-index">02 / Full-stack development</p>
+                <h3>League of Legends Match History Dashboard</h3>
+                <p class="card-description">
+                  Built a full-stack dashboard with a Python/Flask backend and
+                  HTML/CSS views. Integrated Riot Games APIs and Data Dragon
+                  data to combine player rankings, match statistics, and game
+                  assets in one interface, with retries for API rate limits.
+                </p>
+                <ul
+                  class="tags"
+                  aria-label="Match history dashboard technologies"
+                >
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>REST APIs</li>
+                  <li>HTML/CSS</li>
+                  <li>Riot API</li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    class="text-link"
+                    href="https://github.com/Leofuku00/league-match-history"
+                    >View repository <span aria-hidden="true">↗</span></a
+                  >
+                  <a
+                    class="text-link"
+                    href="https://www.youtube.com/watch?v=8K0K1ZI8amg"
+                    >Watch demo <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+              <aside
+                class="project-proof"
+                aria-label="Match history dashboard capability"
+              >
+                <p class="proof-number">10</p>
+                <p>recent matches per player</p>
+                <p class="proof-note">
+                  Rankings, match statistics, and game assets in one dashboard.
+                </p>
+              </aside>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-tinted"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title">My technical toolkit</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-block">
+              <h3>Languages</h3>
+              <p>Python, C++, Java, JavaScript, SQL, HTML/CSS</p>
+            </div>
+            <div class="skill-block">
+              <h3>Web & APIs</h3>
+              <p>Flask, REST APIs, GraphQL</p>
+            </div>
+            <div class="skill-block">
+              <h3>Machine learning & data</h3>
+              <p>PyTorch, scikit-learn, pandas, SQLite</p>
+            </div>
+            <div class="skill-block">
+              <h3>Development tools</h3>
+              <p>Git, Linux, technical documentation</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow">Education</p>
+            <h2 id="education-title">UCLA Computer Engineering</h2>
+          </div>
+          <div class="education-grid">
+            <article class="education-card">
+              <p class="organization">University of California, Los Angeles</p>
+              <h3>B.S. in Computer Engineering</h3>
+              <p class="education-meta">
+                Expected June 2029 <span aria-hidden="true">·</span> GPA: 3.8
               </p>
-              <div class="project-details">
-                <span>Python</span>
-                <span>Riot API</span>
-                <span>JSON</span>
-                <span>API clients</span>
-                <span>Data parsing</span>
-                <span>Dashboard</span>
-              </div>
-            </div>
-            <div class="project-proof">
-              <p class="proof-number">Live API</p>
-              <p data-i18n="projectLeagueMetric">turns third-party game data into usable application data</p>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-index">03</div>
-            <div class="project-main">
-              <div class="project-title-row">
-                <h3 data-i18n="projectOutcomeTitle">Leadership and honors</h3>
-                <span class="status-pill" data-i18n="researchLabel">Community</span>
-              </div>
-              <p data-i18n="projectOutcomeBody">
-                As a Career Team Officer for the UCLA Japanese Student Association, organized the first
-                joint networking event with the Japanese Business Association. Also recognized as a Gold
-                Shield Alumni Scholarship recipient and a Upsilon Pi Epsilon Honor Society member.
+              <h4>Relevant coursework</h4>
+              <p>
+                Data Structures and Algorithmic Complexity, Software
+                Construction, Computer Architecture, C++ Programming, Discrete
+                Mathematics, Logic Design
               </p>
-              <div class="project-details">
-                <span>Leadership</span>
-                <span>Event planning</span>
-                <span>Outreach</span>
-                <span>Upsilon Pi Epsilon</span>
+            </article>
+            <aside class="honors-card" aria-labelledby="honors-title">
+              <h3 id="honors-title">Honors & awards</h3>
+              <ul class="honors-list">
+                <li>
+                  <strong>Gold Shield Alumni Scholarship</strong
+                  ><span>Scholarship recipient</span>
+                </li>
+                <li>
+                  <strong>Upsilon Pi Epsilon Honor Society</strong
+                  ><span>Top 1/3 of class</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-tinted"
+        id="leadership"
+        aria-labelledby="leadership-title"
+      >
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow">Leadership</p>
+            <h2 id="leadership-title">Connecting the community</h2>
+          </div>
+          <article class="experience-card">
+            <div class="card-heading">
+              <div>
+                <p class="organization">UCLA Japanese Student Association</p>
+                <h3>Career Team Officer</h3>
               </div>
+              <p class="date">Oct 2025–Present</p>
             </div>
-            <div class="project-proof">
-              <p class="proof-number">Top 1/3</p>
-              <p data-i18n="projectOutcomeMetric">Upsilon Pi Epsilon Honor Society</p>
-            </div>
+            <p class="card-description">
+              Organized the first joint networking event with the Japanese
+              Business Association (JABA), coordinating outreach to MBA
+              participants and event logistics.
+            </p>
           </article>
         </div>
       </section>
 
-      <section class="section skills-section" id="skills">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="skillsEyebrow">Skills</p>
-          <h2 data-i18n="skillsTitle">Core technical skills</h2>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-block">
-            <h3 data-i18n="skillsLangTitle">Languages</h3>
-            <p>Python, C++, Java, JavaScript, SQL, HTML/CSS</p>
+      <section
+        class="section contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="page-width contact-layout">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let's build something useful.</h2>
+            <p class="contact-description">
+              Open to software engineering, machine learning, and data science
+              internships.
+            </p>
+            <a class="contact-email" href="mailto:leofukunaga912@ucla.edu"
+              >leofukunaga912@ucla.edu</a
+            >
           </div>
-          <div class="skill-block">
-            <h3 data-i18n="skillsBackendTitle">Web, APIs, and data</h3>
-            <p>Flask, REST APIs, GraphQL, SQLite, Pandas, CSV processing, schema normalization</p>
+          <div class="contact-links" aria-label="Contact and profile links">
+            <a href="https://github.com/Leofuku00"
+              >GitHub <span aria-hidden="true">↗</span></a
+            >
+            <a href="https://www.linkedin.com/in/leo-fukunaga-b3a19128a/"
+              >LinkedIn <span aria-hidden="true">↗</span></a
+            >
+            <a href="./assets/leo-fukunaga-resume-english.pdf"
+              >View resume <span aria-hidden="true">↗</span></a
+            >
           </div>
-          <div class="skill-block">
-            <h3 data-i18n="skillsMLTitle">Machine learning</h3>
-            <p>PyTorch, scikit-learn, U-Net, transformer architectures, TF-IDF, NMF, grouped cross-validation</p>
-          </div>
-          <div class="skill-block">
-            <h3 data-i18n="skillsPracticeTitle">Geospatial and workflows</h3>
-            <p>Git, Linux, reproducible scripts, notebooks, technical documentation</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section story-section" id="background">
-        <div class="story-copy">
-          <p class="eyebrow" data-i18n="storyEyebrow">Background</p>
-          <h2 data-i18n="storyTitle">Engineering, research, and leadership</h2>
-          <p data-i18n="storyBody">
-            At Helios RS, I lead development of an automated crack-detection system for building imagery,
-            benchmarking U-Net and transformer architectures for nine-class segmentation and documenting
-            the system for team reuse. Previously, biomedical research at the Lundquist Institute gave me
-            experience validating clinical data, preparing analysis tables and graphics, and contributing to
-            an IDWeek 2025 abstract published in Open Forum Infectious Diseases.
-          </p>
-        </div>
-
-        <div class="timeline" aria-label="Education and experience timeline">
-          <div class="timeline-item">
-            <span>2024–25</span>
-            <p data-i18n="timelineResearch">Biomedical Research Assistant, The Lundquist Institute</p>
-          </div>
-          <div class="timeline-item">
-            <span>2029</span>
-            <p data-i18n="timelineUcla">Expected B.S. in Computer Engineering at UCLA · 3.8 GPA</p>
-          </div>
-          <div class="timeline-item">
-            <span>2025–Present</span>
-            <p data-i18n="timelineHarbor">Career Team Officer, UCLA Japanese Student Association</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact-section" id="contact">
-        <div>
-          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
-          <h2 data-i18n="contactTitle">Open to software engineering or data science internships.</h2>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:leofukunaga912@ucla.edu">leofukunaga912@ucla.edu</a>
-          <a href="https://github.com/Leofuku00">GitHub</a>
-          <a href="https://www.linkedin.com/in/leo-fukunaga-b3a19128a/">LinkedIn</a>
-          <a href="./assets/leo-fukunaga-resume-english.pdf" data-i18n="resumeEnglishLink">Download current resume</a>
         </div>
       </section>
     </main>
+    <footer class="site-footer page-width">
+      <p>Leo Fukunaga · Rancho Palos Verdes, CA</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
   </body>
 </html>
